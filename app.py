@@ -30,7 +30,7 @@ def usercount():
         if password == 'Anilkumar@0153':  # Replace 'your_password' with your actual password
             response = table.scan()
             count = response['Count']
-            return f'Total users: {count}'
+            return f'Total Users: {count}'
         else:
             return 'Invalid password'
     return render_template('usercount.html')
