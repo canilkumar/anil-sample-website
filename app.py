@@ -3,7 +3,7 @@ import boto3
 
 app = Flask(__name__)
 dynamodb = boto3.resource('dynamodb')  # Replace with your desired region
-table_name = 'demo-table'  # Replace with your DynamoDB table name
+table_name = 'anil-table'  # Replace with your DynamoDB table name
 table = dynamodb.Table(table_name)
 
 @app.route('/')
